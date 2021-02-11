@@ -31,6 +31,19 @@ export const CardHeading = styled.h2`
 `
 export const CardText = styled.p`
   color: #353539;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  ${({ blogPost }) =>
+    blogPost &&
+    `
+    white-space: pre-wrap;
+  `}
+  ${({ previewCard }) =>
+    previewCard &&
+    `
+    white-space: pre-wrap;
+  `}
 `
 export const InnerCard = styled.div`
   width: 80%;
