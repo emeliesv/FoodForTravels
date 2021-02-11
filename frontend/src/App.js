@@ -20,7 +20,6 @@ const reducer = combineReducers({ user: user.reducer, blogposts: blogposts.reduc
 const store = configureStore({ reducer })
 
 export const App = () => {
-  //const [tags, setTags] = useState([])
 
   return (
     <Provider store={store}>
