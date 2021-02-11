@@ -78,7 +78,7 @@ export const signUp = (username, email, password, fileInput) => {
         const userId = getStore().user.login.userId
         const formData = new FormData()
         formData.append('image', fileInput.current.files[0])
-        fetch(`http://localhost:8080/users/${userId}`, {
+        fetch(`https://foodfortravels.herokuapp.com/users/${userId}`, {
           method: 'PATCH',
           body: formData,
         })
