@@ -31,9 +31,7 @@ export const CardHeading = styled.h2`
 `
 export const CardText = styled.p`
   color: #353539;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  overflow: scroll;
   ${({ blogPost }) =>
     blogPost &&
     `
