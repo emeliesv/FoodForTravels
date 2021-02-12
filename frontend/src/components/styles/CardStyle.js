@@ -32,6 +32,11 @@ export const CardHeading = styled.h2`
 export const CardText = styled.p`
   color: #353539;
   overflow: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
   ${({ blogPost }) =>
     blogPost &&
     `
