@@ -48,6 +48,7 @@ export const CardText = styled.p`
 export const InnerCard = styled.div`
   width: 80%;
   height: 70%;
+  overflow: scroll;
   &::-webkit-scrollbar {
     display: none;
     -ms-overflow-style: none;
@@ -61,7 +62,6 @@ export const InnerCard = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: scroll;
   `}
   ${({ previewCard }) =>
     previewCard &&
