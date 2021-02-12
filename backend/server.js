@@ -103,7 +103,7 @@ const blogpostSchema = mongoose.Schema(
     tags: [
       String,
     ],
-    image: { //Perhaps change this to an array
+    image: {
       imageName: {
         type: String,
       },
